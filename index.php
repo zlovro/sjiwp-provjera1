@@ -13,7 +13,7 @@ $klasaUlaznice = "";
 ?>
 
 <?php
-require("zaglavlje.php")
+require("dijelovi/zaglavlje.php")
 ?>
 
 <main>
@@ -33,5 +33,5 @@ require("zaglavlje.php")
 </main>
 
 <?php
-require("podnozje.php");
+require("dijelovi/podnozje.php");
 ?>
