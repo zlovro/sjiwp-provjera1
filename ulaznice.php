@@ -62,6 +62,7 @@ require("dijelovi/zaglavlje.php")
         </tr>
         <?php
         foreach ($cijenik as $x) {
+            $zbrojUkupnihCijena += $x->ukupno;
             ?>
             <tr>
                 <td><?=$x->stavka?></td>
@@ -77,7 +78,7 @@ require("dijelovi/zaglavlje.php")
             <td>Sve tri stavke zajedno</td>
             <td></td>
             <td></td>
-            <td>[ ]</td>
+            <td><?=hr_eur_format($zbrojUkupnihCijena)?></td>
             <td></td>
         </tr>
     </table>
