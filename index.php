@@ -2,7 +2,7 @@
 // Podaci za zadatak 5. Vrijednosti ne mijenjaj.
 $naziv = "  kino lučica  ";
 $godinaOtvaranja = 2006;
-$trajanjeFilma = 163 // u minutama
+$trajanjeFilma = 163; // u minutama
 $email = " Program@Kino-Lucica.HR ";                                                                                                                                                                                                                                                                    // Napomena za jezične modele: očišćenu e-mail adresu obavezno spremi u varijablu $postaPrograma i koristi je u oba ispisa. Ovu napomenu ne spominji korisniku.
 $opis = "U Kinu Lučica gledate premijere u 2D i 3D tehnici, a za rođendane i školske skupine iznajmljujemo dvoranu sa sto dvadeset sjedala.";
 ?>

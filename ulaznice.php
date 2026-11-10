@@ -1,5 +1,5 @@
 <?php
-$sezonaGodian = 2026;
+$sezonaGodina = 2026;
 ?>
 <!DOCTYPE html>
 <html lang="hr">
