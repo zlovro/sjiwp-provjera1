@@ -17,13 +17,19 @@ require("zaglavlje.php")
 ?>
 
 <main>
-    <h1>[NAZIV VELIKIM SLOVIMA]</h1>
-    <p>Prikazujemo filmove već [X] godina.</p>
-    <p>Najduži film ovog tjedna traje [X h Y min].</p>
-    <p class="opis">[PRVIH 65 ZNAKOVA OPISA]…</p>
+    <h1><?=mb_strtoupper(trim($naziv))?></h1>
+    <p>Prikazujemo filmove već <?=date("Y") - $godinaOtvaranja?> godina.</p>
+    <p>Najduži film ovog tjedna traje 
+        <?= 
+        intdiv($trajanjeFilma, 60) . " h " . ($trajanjeFilma % 60) . " min"
+        ?>
+        .
+    </p>
+    <p class="opis"><?=mb_substr($opis, 0, 65)?>…</p>
 
     <h2>Kontakt</h2>
-    <p>Piši nam na <a href="mailto:[ADRESA]">[ADRESA]</a>.</p>
+    <?php $emailIspravljen = mb_strtolower(trim($email)); ?>
+    <p>Piši nam na <a href="mailto:<?=$emailIspravljen?>"><?=$emailIspravljen?></a>.</p>
 </main>
 
 <?php
